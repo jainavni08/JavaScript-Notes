@@ -15,8 +15,11 @@
 5.types in JS
   PRIMITIVE v/s REFERNCE
   PRIMITIVE-
-  REFERNCE- [ ] , { } , ( ) (jo tera hai vo mera hai)
-
+  REFERNCE- [ ] , { } , ( ) (jo tera hai vo mera hai)(agar changes kiya maine ek toh dosre main hongi)
+                                                      ex= var a=[1, 2, 3, 4, 5]
+                                                          var b = a
+                                                          b.pop()
+                                                          !!NOW!! b=[1,2,3,4] but also a=[1,2,3,4]
 6.if else, loops , 
 
 7.functions
