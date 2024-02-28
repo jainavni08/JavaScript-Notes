@@ -1,0 +1,31 @@
+var v/s let v/s const (3 diiference)
+
+  1.var --- part of es5
+    let/const----part of es6(latest version of JS)
+    
+  2.var --- function bounded  (scope is till nearest parnt function)
+    let --- bracket bounded
+
+  3.var---gets included in window
+    let---don't get included in window
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BROWSER CONTEXT API
+  1.WINDOW--Samjo ki ek box hai jisme aise features hai jo browser provide karta hai jo JS mai uss hote hai ex:alert,console
+  2.STACK--decide order of execution (jo pehle aaya vo pehle execute hoga )
+  3.HEAP MEMORY
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EXECUTION CONTEXT
+  made when a function is called
+  code inside function is executed here
+  contains:
+          1.VAR
+          2.FUNCTION (children function)
+          3.LEXICAL ENVIRONMENT -- details of access of variables and function (yeh batata hai ki konsi cheez accessible hai )
+                                -- contains details of scope and scope chain ( ek children apne parent ki data access kar sakta hai lekin ek parent apne bacche ki nahi kar sakta)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  
+  
