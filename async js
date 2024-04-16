@@ -1,0 +1,56 @@
+async js -- async matlab jab ek saath shuru kardo ,jiska answer pahle aajaye 
+uska jawaab dedena
+
+async un case mai use hota jab answer pata nahi kab tak aayega 
+fir jab answer aa jata hai tab uske respect main kuch code chalta hai 
+
+main stack => execution (all sync code)
+side stack => call back function (all async code)
+jab main stack COMPLETELY EMPTY hota hai tak EVENT LOOP side stack ke code se puchta hai ki 
+tumahara kaam ho gaya??
+agar ho gaya toh vo main stack aata hai aur fir execute hota hai.
+
+JS IS SYNCHRONOUS ( IT IS SINGLE THREADED)
+
+//async REQUEST DENE VALE FUNCTION
+1.setTimeOut
+2.setInterval
+3.promises
+4.fetch
+5.axios
+6.XMLHttpRequest
+
+setTimeout(callback function , time in millisecond)
+  setTimeout(function(){
+      console.log("hi")
+  },2000)
+
+
+//REQUEST KA ANSWER KE SATH KYA KARNA HAI 
+then catch
+callbacks
+async await
+
+const ans = new Promise(function(resolve,reject){
+      if(true)
+          return resolve();
+      else
+          return reject();
+})
+
+ans.then(function(){
+    console.log("RESOLVE HO GAYA")
+}).catch(function(){
+     console.log("REject HO GAYA !!!!")
+})
+
+
+async function abcd(){
+    await fetch("url")
+}
+
+
+
+
+
+
